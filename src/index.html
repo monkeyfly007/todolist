@@ -1,0 +1,38 @@
+<!--
+ * @Author: jinyu
+ * @Date: 2022-03-13 21:36:26
+ * @LastEditors: jinyu
+ * @LastEditTime: 2022-03-14 14:28:49
+ * @Description: file content
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <label for="">我的todolist</label>
+        <input type="text" placeholder="请输入待办项" id="addList" />
+      </header>
+      <section class="section-info">
+        <span>
+          <label for="checkAll">全选</label>
+          <input id="checkAll" type="checkbox" />
+        </span>
+        <span>已完成事项：<span id="doneCount">0</span></span>
+        <span>未完成事项：<span id="todoCount">0</span></span>
+        <button id="clear" class="btn-dangerous">清除已完成的事项</button>
+      </section>
+      <div class="content">
+        <ol id="todoList"></ol>
+      </div>
+    </div>
+    <script src="./js/todo.js"></script>
+  </body>
+</html>
